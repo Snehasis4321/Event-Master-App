@@ -1,6 +1,9 @@
 # Event Master App: [Appwrite](https://appwrite.io) [Hashnode](https://hashnode.com) Hackathon
 
+## Team Details
 
+* Snehasis Ghosh - [@SnehasisGhosh](https://snehasisghosh.hashnode.dev/)
+    
 
 ## Description of Project
 
@@ -31,6 +34,9 @@ Event Master is an event planning and managing app, where users can create their
         I have used appwrite storage and created a new bucket where I add all the images of events when a user publishes any event.
         
 
+## Challenges Faced
+
+Since appwrite cloud uses version 1.1.2 i miss all the new features, especially relationships and new query operators. It would have reduced some lines of code.
 
 ## Public Code Repo
 
