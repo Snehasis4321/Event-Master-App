@@ -1,5 +1,7 @@
 # Event Master App: [Appwrite](https://appwrite.io) [Hashnode](https://hashnode.com) Hackathon
 
+![event-main-page](https://github.com/Snehasis4321/Event-Master-App/assets/96995340/8641b922-f0a3-406e-81f7-e5a8c35babc8)
+
 
 
 ## Description of Project
@@ -40,8 +42,6 @@ Here is the Github Repo [Link](https://github.com/Snehasis4321/Event-Master-App)
 
 Here is the demo video [Link](https://youtu.be/T1D_5VxgMNI)
 
-%[https://youtu.be/T1D_5VxgMNI] 
-
 ## App Download Link
 
 Here is the App [Download Link](https://github.com/Snehasis4321/Event-Master-App/releases/tag/v1.0.0)
@@ -55,6 +55,6 @@ You can use these Login Credentials to Test the app.
 
 ## Thank You
 
-%[https://media.giphy.com/media/5r23ff6dhoGGJKoqq0/giphy.gif] 
+![](https://media.giphy.com/media/5r23ff6dhoGGJKoqq0/giphy.gif)
 
 I would like to thank Hashnode and Appwrite for providing an opportunity to participate in this hackathon 😊.
