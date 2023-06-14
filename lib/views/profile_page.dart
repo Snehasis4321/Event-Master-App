@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:event_planner_app/controllers/auth.dart';
 import 'package:event_planner_app/views/check_session.dart';
 import 'package:event_planner_app/views/manage_events.dart';

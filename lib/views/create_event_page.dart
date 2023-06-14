@@ -1,3 +1,5 @@
+// ignore_for_file: unused_field, use_build_context_synchronously, avoid_print
+
 import 'dart:io';
 
 import 'package:appwrite/appwrite.dart';

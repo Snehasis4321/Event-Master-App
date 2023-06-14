@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:appwrite/appwrite.dart';
 import 'package:event_planner_app/controllers/database_logic.dart';
 import 'package:event_planner_app/controllers/saved_data.dart';

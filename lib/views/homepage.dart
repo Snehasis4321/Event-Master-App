@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'dart:math';
 
 import 'package:appwrite/models.dart';
@@ -26,7 +28,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     name = SavedData.getUserName().split(" ")[0];
     getAllEvents().then((value) {
       events = value;
@@ -72,8 +73,10 @@ class _HomePageState extends State<HomePage> {
         actions: [
           IconButton(
               onPressed: () async {
-                await Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const ProfilePage()));
+                await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ProfilePage()));
                 refresh();
               },
               icon: const Icon(
@@ -126,10 +129,10 @@ class _HomePageState extends State<HomePage> {
                         ),
                         items: [
                           ...List.generate(4, (index) {
-                            // int eventIndex =
-                            //     (randomIndex + index) % events.length;
+                            int eventIndex =
+                                (randomIndex + index) % events.length;
                             return EventContainer(
-                              data: events[index],
+                              data: events[eventIndex],
                             );
                           }),
                         ],
@@ -222,8 +225,8 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color.fromARGB(255, 218, 255, 123),
         onPressed: () async {
-          await Navigator.push(
-              context, MaterialPageRoute(builder: (context) => const CreateEvent()));
+          await Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const CreateEvent()));
           refresh();
         },
         child: const Icon(

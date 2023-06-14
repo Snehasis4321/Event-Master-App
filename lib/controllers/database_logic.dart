@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:appwrite/appwrite.dart';
 import 'package:event_planner_app/controllers/saved_data.dart';
 
@@ -76,7 +78,6 @@ Future<void> createEvent(
 
 // Get All Events
 Future getAllEvents() async {
-  final id = SavedData.getUserId();
   try {
     final data = await database.listDocuments(
       collectionId: "648703e226d9d5390ffc",
@@ -121,7 +122,7 @@ Future editEvent(
   String? sponsers,
 }) async {
   try {
-    final data = await database.updateDocument(
+    await database.updateDocument(
       collectionId: "648703e226d9d5390ffc",
       databaseId: databaseId,
       documentId: documentId,
@@ -163,7 +164,7 @@ Future rsvpEvent(String id, List participants, String documentId) async {
   final userId = SavedData.getUserId();
   participants.add(userId);
   try {
-    final data = await database.updateDocument(
+    await database.updateDocument(
       collectionId: "648703e226d9d5390ffc",
       databaseId: databaseId,
       documentId: documentId,
